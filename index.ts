@@ -4,7 +4,7 @@ import cors from 'cors';
 
 import router from './routes/router';
 
-const server = new Server();
+const server = Server.instance;
 
 // BodyParser
 server.app.use( bodyParser.urlencoded({extended: true}) );
