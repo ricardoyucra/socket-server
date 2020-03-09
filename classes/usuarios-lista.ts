@@ -47,6 +47,7 @@ export class UsuariosLista {
         const usuarioTemp = this.getUsuario(id);
 
         this.lista = this.lista.filter(usuario => usuario.id !== id);
+        console.log(this.lista);
 
         return usuarioTemp;
     }
